@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 보더</title>
+    <style>
+        div {
+            margin: 20px;
+            display: flex;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        #first-box {
+            border-top-left-radius: 100%;
+        }
+
+        #second-box {
+            border-top-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+        }
+
+        #third-box {
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        #fourth-box {
+            height: 50px;
+            border-radius: 100px 100px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="first-box" class="box"></div>
+        <div id="second-box" class="box"></div>
+        <div id="third-box" class="box"></div>
+        <div id="fourth-box" class="box"></div>
+    </div>
+</body>
+</html>

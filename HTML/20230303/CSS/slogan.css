@@ -1,0 +1,30 @@
+body {
+    font-family: 'Dovemayo_gothic', sans-serif;
+    font-size: 1.5em;
+
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 4px black, 0 0 1em rgb(112, 112, 112), 0 0 0.2em rgb(148, 148, 161);
+}
+
+h4 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(221, 221, 221);
+    letter-spacing: 3px;
+}
+
+p {
+    background-color: rgb(255, 255, 176);
+    font-size: 3rem;
+}
+
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}px
