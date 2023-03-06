@@ -1,0 +1,55 @@
+.card-item {
+    width: 288px;
+    background: #fff;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    border-radius: 8px;
+    overflow: hidden; /* 체크*/
+}
+
+.card-item img {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover; /* 체크*/
+    vertical-align: top; /* 체크*/
+}
+
+.card-item a {
+    text-decoration: none;
+    color: #29363D;
+}
+
+.card-text {
+    padding: 24px 16px 16px;
+}
+
+.card-text .title {
+    font-size: 14px;
+    white-space: nowrap; /* 체크*/
+    overflow: hidden; /* 체크*/
+    text-overflow: ellipsis; /* 체크*/
+}
+
+.card-text .title + p {
+    font-size: 10px;
+    color: #5a6a72;
+    overflow: hidden; /* 체크*/
+    display: -webkit-box; /* 체크*/
+    -webkit-box-orient: vertical; /* 체크*/
+    -webkit-line-clamp: 2; /* 체크*/
+    word-break: break-all; /* 체크*/
+}
+
+.card-item .underline {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 6px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin-top: 12px
+}
