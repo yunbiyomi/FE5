@@ -58,7 +58,14 @@ p {
     float: right;
 }
 
-.find-id + span {
+.login-link img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+span {
     display: inline-block;
     width: 1px;
     height: 15px;
@@ -66,6 +73,21 @@ p {
     margin: 0 4px;
     vertical-align: middle;
     font-weight: 400;
+}
+
+.find-id {
+    background-image: url(../img/icon-lock.png);
+}
+
+.join-btn{
+    background-image: url(../img/icon-user.png);
+}
+
+.find-id,
+.join-btn {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-left: 20px;
 }
 
 .a11y-hidden {

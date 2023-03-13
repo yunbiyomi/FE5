@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼만들기</title>
+    <style>
+        [class^="btn"] {
+            width: 88px;
+            height: 32px;
+            background: #343F50;
+            border: 1px solid #1A202C;
+            color: #CBD5DF;
+            box-shadow: inset 1px 1px #4a5568;
+            font-size: 12px;
+            font-weight: 700;
+            margin: 10px;
+        }
+
+        [class^="btn"]:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+            transition: 3s;
+        }
+
+        .btn:active {
+            box-shadow: inset 1px 1px #262F3E;
+        }
+
+        .btn:disabled {
+            color: #4a5568;
+            box-shadow: none;
+            text-decoration: none;
+            background: #3A4556;
+            border: 1px solid #3A4556;
+        }
+
+        .btn-positive {
+            color : #439AFF;
+        }
+
+        .btn-positive:hover,
+        .btn-positive:active {
+            background: #439AFF;
+            border: 1px solid #439AFF;
+            box-shadow: inset 1px 1px #73B4FF;
+        }
+
+        .btn-positive:active {
+            box-shadow: inset 1px 1px #3B78BE;
+        }
+
+        .btn-negative {
+            color : #EB5757;
+        }
+
+        .btn-negative:hover,
+        .btn-negative:active {
+            background: #EB5757;
+            border: 1px solid #EB5757;
+            box-shadow: inset 1px 1px #FD6F6F;
+        }
+
+        .btn-negative:active {
+            box-shadow: inset 1px 1px #D94242;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn" type="button">Button</button>
+    <button class="btn-positive" type="button">Yes</button>
+    <button class="btn-negative" type="button">Del</button>
+    <button class="btn" type="button" disabled>Button</button>
+</body>
+</html>
