@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="static/css/signin.css">
+        <meta charset="UTF-8">
+        <title>Login Form</title>
+        <style>
+            .form-signin {
+                width: 500px;
+                background: pink;
+            }
+        </style>
+</head>
+    <body class="text-center">
+        <div class="form-signin">
+            <form method="GRT" name="Login_form">
+                <h1 class="mb-3 fw-normal">Login</h1>
+                    <div class="form-floating">
+                        <label for="floatingInput">ID</label>
+                        <input type="text" class="form-control" id="floatingInput" name="id" placeholder="id">
+                        </div>
+                        <div class="form-floating">
+                            <label for="floatingInput">PASSWORD</label>
+                            <input type="password" class="form-control" id="floatingInput" name="passwd" placeholder="password">
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit" onClick="return check()">LOGIN</button>
+            </form>
+            <p class="small fw-bold mt-2 pt-1 mb-0">
+                STILL NOT ACCOUNT? <a href="#" class="link-danger">SIGN UP</a>
+            </p>
+        </div>
+        <script>
+            function check() {
+            if(Login_form.id.value == "" || Login_form.passwd.value == "") {
+                alert("ID OR PASSWORD INCORRECT.");
+                Login_form.id.value="";
+                Login_form.passwd.value="";
+            }
+            else if(Login_form.id.value == "kisa" && Login_form.passwd.value == "kisa123") {
+                alert("Login Success!");
+                window.location.href="/login_success.html";
+            }
+        }
+    </script>
+</body>
+</html>
