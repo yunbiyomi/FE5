@@ -1,0 +1,23 @@
+
+body {
+    background: gold;
+    margin: 0;
+}
+
+.box-possess {
+    width: 360px;
+    height: 50px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.possess-money {
+    width: 306px;
+    border-radius: 3px;
+    background: #EAE8FE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
