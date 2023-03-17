@@ -24,3 +24,112 @@ header {
     width: 386px;
 }
 
+.drink-wrap {
+    width: 360px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 12px;
+    background: tomato;
+}
+
+.container {
+    width: 360px;
+    margin: auto;
+}
+
+.form-wrap-2 {
+    margin: 0;
+    width: 306px;
+    margin: 12px auto;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.money-container.left {
+    grid-area: a;
+    width: 200px;
+}
+
+.out-money-btn {
+    width: 94px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-weight: 500;
+    grid-area: b;
+}
+
+#in-money {
+    grid-area: c;
+    font-size: 13px;
+    color: #BDBDBD;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.in-money-btn {
+    grid-area: d;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.drink-list {
+    grid-area: e;
+    border: 1px solid #BDBDBD;
+}
+
+.get-money-btn {
+    grid-area: f;
+    height: 106px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    background: #6327FE;
+    color:#fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.left-box {
+    width: 360px;
+    padding: 31px 0 28px 0;
+    background-color: #fff;
+    border: 4px solid green;
+}
+
+.right-box {
+    border: 4px solid orange;
+}
+
+.list-box {
+    width: 381px;
+    height: 507px;
+    border: 4px solid aqua;
+}
