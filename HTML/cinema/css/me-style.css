@@ -1,0 +1,51 @@
+body,
+h1,
+ul {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button{
+    background: inherit; 
+    border:none;
+    box-shadow:none; 
+    border-radius:0; 
+    padding:0; 
+    overflow:visible; 
+    cursor:pointer
+}
+
+div {
+    width: 50%;
+    height: 1px;
+    margin: 30px auto;
+    background: rgb(129, 129, 129);
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+ul {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.btn-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+}
+
+button:active {
+    color: black;
+}
