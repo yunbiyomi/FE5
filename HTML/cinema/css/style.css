@@ -115,7 +115,7 @@ h1 {
 }
 
 .star {
-    background: url(img/icon-star.svg) no-repeat 0 0 / 1em;
+    background: url(/cinema/img/icon-star.svg) no-repeat 0 0 / 1em;
     padding-left: 1.3em;
 }
 

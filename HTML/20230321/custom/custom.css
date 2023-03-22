@@ -1,0 +1,18 @@
+.custom-input {
+    appearance: none;
+    width: 1.4em;
+    height: 1.4em;
+    margin: 0 4px 3px 0;
+    vertical-align: middle;
+    transition: all 0.3s;
+    background: url(/20230321/custom/img/check1.svg) no-repeat center / 90%;
+}
+
+.custom-input:checked {
+    background: url(/20230321/custom/img/check1-checked.svg) no-repeat center / 90%;
+}
+
+.custom-input:checked + label {
+    font-weight: bold;
+    color: royalblue;
+}
