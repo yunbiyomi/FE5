@@ -1,0 +1,19 @@
+@mixin display-style($display, $justify-content, $align-items) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+
+    &-item {
+        width: 100px;
+        height: 100px;
+        border-radius: 10%;
+    }
+}
+
+.card {
+    @include display-style(flex, center, center)
+}
+
+.product {
+    @include display-style(flex, right, right)
+}

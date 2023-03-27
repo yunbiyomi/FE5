@@ -1,0 +1,11 @@
+@mixin iconBg($path, $start, $end) {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    @for $i from $start through $end {
+        &:nth-child(#{$i}) {
+            background-image:url($url + '#{$path}#{$i}.png');
+        }
+    }
+}
