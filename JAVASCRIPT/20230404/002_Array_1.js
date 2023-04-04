@@ -1,10 +1,15 @@
 // arr(*****)
 const arr = [10, 20, 30]
-arr[0] = 100 // const는 값의 변화가 안된다고 하지 않았나?
+arr[0] = 100 // const는 값의 변화가 안된다고 하지 않았나? // 변경가능, mutable
 // arr = 100
 // arr = [10, 20, 30]
 console.log(arr)
 console.dir(arr) // 프러퍼티와 메서를 볼 수 있습니다.
+
+// 문자열(string)
+const s = 'hello world'
+console.log(s[0])
+s[0] = 'i' // 불변, immutable
 
 
 // arr.1 // error
@@ -71,26 +76,26 @@ arr.push(4)
 
 // push 실무 예제
 // let tableBodyData = []
-//     for (const iterator of data) {
-//         tableBodyData.push(`          
-//             <tr>
-//                 <td>${iterator['a']}</td>
-//                 <td>${iterator['b']}</td>
-//                 <td>${iterator['c']}</td>
-//                 <td>${iterator['d']}</td>
-//                 <td>${iterator['e']}</td>
-//                 <td>${iterator['f']}</td>
-//             </tr>
-//         `)
-//     }
-//     document.querySelector('#dataTable > tbody').innerHTML = tableBodyData.join('')
+// for (const iterator of data) {
+//     tableBodyData.push(`          
+//         <tr>
+//             <td>${iterator['a']}</td>
+//             <td>${iterator['b']}</td>
+//             <td>${iterator['c']}</td>
+//             <td>${iterator['d']}</td>
+//             <td>${iterator['e']}</td>
+//             <td>${iterator['f']}</td>
+//         </tr>
+//     `)
+// }
+// document.querySelector('#dataTable > tbody').innerHTML = tableBodyData.join('')
 const arr = [1, 2, 3, 4, 5]
 arr.pop()
 // 1. 마지막에서 값을 꺼내고 
 // 2. 꺼낸 값을 반환(return) 합니다.
 // 5
 arr
-// (4) [1, 2, 3, 4]
+// (4) [1, 2, 3, 4]
 
 // pop
 const arr = [1, 2, 3, 4, 5]
@@ -173,17 +178,18 @@ myArray.slice(0, 100)
 const arr = [10, 20, 30, 40, 50]
 // arr.forEach(함수)
 // 함수(callbackfn): (value: number, index: number, array: number[]
-arr.forEach(function(item, index){
+// callback function
+arr.forEach(function (item, index) {
     console.log(index, item)
 })
 
-arr.forEach(function(item, index){
+arr.forEach(function (item, index) {
     console.log(index, item)
     console.log('hello')
     console.log('world')
 })
 
-arr.forEach(function(item, index, arr){
+arr.forEach(function (item, index, arr) {
     console.log(index, item, arr)
     console.log('hello')
     console.log('world')
@@ -214,8 +220,8 @@ const arr2 = []
 const arr = Array(100).fill(0)
 const arr2 = []
 
-function hojun(item, index){
-    arr2.push(index+1)
+function hojun(item, index) {
+    arr2.push(index + 1)
 }
 
 arr.forEach(hojun)
@@ -247,15 +253,15 @@ console.log(newAvengers)
 // map은 forEach와 다르게 새로운 배열을 생성합니다.
 
 const arr = [1, 2, 3]
-arr.map(function(item, index){
+arr.map(function (item, index) {
     return item ** 2
 })
 
-arr.map(function(x){
+arr.map(function (x) {
     return x ** 2
 })
 
-arr.map(x => x **2)
+arr.map(x => x ** 2)
 
 const arr = Array(100).fill(0)
 // 같은 코드 1
@@ -264,13 +270,13 @@ arr.map((v, i) => i)
 
 // 같은 코드 2
 const arr = Array(100).fill(0)
-arr.map(function(v, i){
+arr.map(function (v, i) {
     return i
 })
 
 // 같은 코드 3
 const arr = Array(100).fill(0)
-function hojun(v, i){
+function hojun(v, i) {
     return i
 }
 arr.map(hojun)
@@ -331,4 +337,44 @@ tip10.splice(2, 0, 1000)
 tip10
 
 // map하고 다시 오겠습니다.
-// const tip9 = Array(100).fill(0).map
+const tip11 = Array(100).fill(0).map((v, i) => i + 1)
+
+
+const tip12 = [
+    {
+        "_id": "642ba3980785cecff3f39a8d",
+        "index": 0,
+        "age": 28,
+        "eyeColor": "green",
+        "name": "Annette Middleton",
+        "gender": "female",
+        "company": "KINETICA"
+    },
+    {
+        "_id": "642ba398d0fed6e17f2f50c9",
+        "index": 1,
+        "age": 37,
+        "eyeColor": "green",
+        "name": "Kidd Roman",
+        "gender": "male",
+        "company": "AUSTECH"
+    },
+    {
+        "_id": "642ba39827d809511d00dd8d",
+        "index": 2,
+        "age": 39,
+        "eyeColor": "brown",
+        "name": "Best Ratliff",
+        "gender": "male",
+        "company": "PRISMATIC"
+    }
+]
+
+
+// askup
+
+const ages1 = tip12.map((item) => item.age);
+const ages2 = tip12.map((item) => {
+    return item.age
+});
+console.log(ages1, ages2);
