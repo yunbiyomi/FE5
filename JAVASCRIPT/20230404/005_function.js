@@ -87,7 +87,7 @@ function hello(para) {
 
 console.log(hello(10))
 
-let x = console.log('hello')
+let x1 = console.log('hello')
 x // undefined
 
 // 함수, 메서드(클래스 안에 들어간 함수)
@@ -140,8 +140,8 @@ function hello5() {
 }
 
 // return을 하더라도 1회 반복만 종료되는 것이지 전체 반복이 종료되는 것은 아닙니다.
-const x = [10, 20, 30, 40];
-x.forEach(function (el) {
+const xx = [10, 20, 30, 40];
+xx.forEach(function (el) {
     console.log(el)
     return
     console.log('world')
