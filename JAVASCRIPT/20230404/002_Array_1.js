@@ -72,7 +72,7 @@ const d = [
 
 // push
 const arr = [1, 2, 3];
-arr.push(4)
+arr.push(4) // arr = [1, 2, 3, 4]
 
 // push 실무 예제
 // let tableBodyData = []
@@ -105,14 +105,14 @@ arr
 // unshift
 const myArray1 = ["사과", "바나나", "수박"];
 myArray1.unshift("오이", "배");
-console.log(myArray1);
+console.log(myArray1); // myArray1 = ["오이", "배", "사과", "바나나", "수박"];
 
 // shift
 // 1. 앞에서 값을 꺼내고 
 // 2. 꺼낸 값을 반환(return) 합니다.
 const myArray2 = ["사과", "바나나", "수박"];
 // myArray2.shift();
-// console.log(myArray2); 
+// console.log(myArray2); // myArray2 = ["바나나", "수박"];
 
 let firstValue = myArray2.shift();
 firstValue
@@ -197,7 +197,7 @@ arr.forEach(function (item, index, arr) {
 
 // 실무에서 사용하는 코드는 아닙니다.
 const arr = Array(100).fill(0)
-const arr2 = []
+const arr2 = [];
 
 // arr.forEach(function(item, index){
 //     arr2.push(index)
@@ -218,7 +218,7 @@ const arr2 = []
 
 // 같은 코드4(이렇게는 사용하지 않습니다. 이름이 있는 함수 사용)
 const arr = Array(100).fill(0)
-const arr2 = []
+const arr3 = []
 
 function hojun(item, index) {
     arr2.push(index + 1)

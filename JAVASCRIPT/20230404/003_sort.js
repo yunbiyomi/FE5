@@ -5,16 +5,16 @@ console.log(avengers.sort());
 const nums = [3, 1, 8, 6];
 console.log(nums.sort());
 
-const nums = [3, 1, 11, 8, 6];
+const nums1 = [3, 1, 11, 8, 6];
 console.log(nums.sort()); // 'sort를 어느알고리즘으로 할꺼냐?'는 브라우저의 자유!
 
 
 // 오름차순
-const nums = [3, 1, 11, 8, 6];
+const nums2 = [3, 1, 11, 8, 6];
 console.log(nums.sort((a, b) => a - b));
 
 // 내림차순
-const nums = [3, 1, 11, 8, 6];
+const nums3 = [3, 1, 11, 8, 6];
 console.log(nums.sort((a, b) => b - a));
 
 // 실무사용코드
@@ -31,12 +31,12 @@ function sort(key) {
 }
 
 // 딥하게 sort를 탐색해보겠다!?
-const nums = [3, 1, 11, 8, 6];
+const nums4 = [3, 1, 11, 8, 6];
 console.log(nums.sort((a, b) => {
     console.log(a, b)
 }));
 
-const nums = [3, 1, 11, 8, 6];
+const nums5 = [3, 1, 11, 8, 6];
 console.log(nums.sort((a, b) => {
     console.log(a, b)
     console.log(a - b)
