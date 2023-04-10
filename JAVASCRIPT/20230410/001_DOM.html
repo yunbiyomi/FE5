@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- <p>hello</p>
+    <p>hello</p>
+    <p id="myTxt">hello</p>
+    <p class="txt1">hello</p>
+    <p class="txt1">hello</p>
+
+    <script>
+        console.log(document.getElementById('myTxt'));
+        console.log(document.getElementsByTagName('p'));
+        console.log(document.getElementsByClassName('txt1'));
+
+        const element = document.getElementsByClassName('txt1');
+
+
+    </script> -->
+    점심 식단
+    <article id="container">
+        <ul>
+            <li>탕수육</li>
+            <li class="item-second">유산슬</li>
+            <li>짜장면</li>
+        </ul>
+    </article>
+    저녁 식단
+    <article>
+        <ul>
+            <li>된장국</li>
+            <li class="item-second">김치찌게</li>
+            <li>해장국</li>
+        </ul>
+    </article>
+
+    <!-- 배운 문법을 바탕으로 HTML 요소들 중 첫번째 item-second 와 첫번째 li 를 콘솔로 출력해보세요 🙂 (querySelector 사용 X) -->
+    <script>
+        const container = document.getElementById('container');
+        // console.log(container.getElementsByTagName('li')[0]);
+        // console.log(container.querySelector('#container'));
+        console.log(container.getElementsByTagName('li'));
+        console.log(container.querySelectorAll('li'));
+
+        container.querySelector('.item-second').textContent = '라조기';
+        container.querySelector('.item-second').classList.add('new');
+
+        // const target = document.querySelector('.item-second');
+        // target.remove();
+
+
+        // const listItem = document.createElement('li');
+        // container.append(listItem);
+
+    </script>
+</body>
+</html>
