@@ -58,11 +58,11 @@ for (const item of arr2) {
     console.log(item)
 }
 
-let s1 = 0
+let s = 0
 for (const item of arr2) {
-    s1 += item
+    s += item
 }
-console.log(s1)
+console.log(s)
 
 for (const item of obj2) { // of 뒤에 iterable한 값이 나와야 합니다.
     console.log(item)
@@ -124,10 +124,10 @@ for (let i = 1; i < s.length; i++) {
 }
 
 // 위보다 깔끔한 코드가 나오진 않습니다.
-let s2 = [1, 3, 4, 8, 13, 17, 20]
-for (const i in s2) {
+let s = [1, 3, 4, 8, 13, 17, 20]
+for (const i in s) {
     console.log(parseInt(i))
-    console.log(s2[i], s2[parseInt(i) + 1])
+    console.log(s[i], s[parseInt(i) + 1])
 }
 
 // 문제
@@ -136,11 +136,11 @@ let 수학점수 = [10, 99, 89, 70]
     // step1
     (수학점수[0] + 수학점수[1] + 수학점수[2] + 수학점수[3]) / 수학점수.length
 // step2
-let s3 = 0
+let s = 0
 for (let i = 0; i < 수학점수.length; i++) {
-    s3 += 수학점수[i];
+    s += 수학점수[i];
 }
-console.log(s3 / 수학점수.length)
+console.log(s / 수학점수.length)
 
 // 문제
 // 다음 user의 나이 평균을 구하세요.
@@ -173,14 +173,14 @@ let user = [
 // 2. age가 입력되지 않았다면?
 // 3. age 필드가 없다면?(MongoDB의 경우)
 
-let s4 = 0
+let s = 0
 for (let i = 0; i < user.length; i++) {
     console.log(user[i]['age'])
-    s4 += user[i]['age']
+    s += user[i]['age']
 }
 console.log(Math.floor(s / user.length))
 
-let user2 = [
+let user = [
     {
         "_id": "642e3071c61a23c70ae6076b",
         "index": 0,
@@ -209,33 +209,33 @@ let user2 = [
 // 2. age가 입력되지 않았다면?
 // 3. age 필드가 없다면?(MongoDB의 경우)
 
-let s5 = 0
+let s = 0
 for (let i = 0; i < user.length; i++) {
     console.log(user[i]['age'])
     s += user[i]['age']
 }
 // console.log(Math.floor(s / user.length))
-console.log((s5 / user.length).toFixed(2))
+console.log((s / user.length).toFixed(2))
 
 
 /////
 
-let s6 = 0
+let s = 0
 for (const i of user) {
-    s6 += i.age
+    s += i.age
 }
-console.log((s6 / user.length).toFixed(2))
+console.log((s / user.length).toFixed(2))
 
 /////
 
-let s7 = 0
+let s = 0
 for (const i in user) {
-    s7 += user[i].age
+    s += user[i].age
 }
-console.log((s7 / user.length).toFixed(2))
+console.log((s / user.length).toFixed(2))
 
 ///// 심화 수업 /////
-let user3 = [
+let user = [
     {
         "_id": "642e3071c61a23c70ae6076b",
         "index": 0,
@@ -265,42 +265,42 @@ let user3 = [
     }
 ]
 
-let s8 = 0
+let s = 0
 for (const i of user) {
     console.log(i)
     console.log(i.age) // 마지막에 undefined
-    console.log(s8) // 마지막에 102
+    console.log(s) // 마지막에 102
     console.log('----------')
-    s8 += i.age // 마지막에 undefined + 102
+    s += i.age // 마지막에 undefined + 102
 }
-console.log((s8 / user.length).toFixed(2))
+console.log((s / user.length).toFixed(2))
 
 /////////
 
-let s9 = 0
+let s = 0
 for (const i of user) {
     console.log(i)
     console.log(i.age) // 마지막에 undefined
-    console.log(s9) // 마지막에 102
+    console.log(s) // 마지막에 102
     console.log('----------')
     s += i.age ?? 0
 }
-console.log((s9 / user.length).toFixed(2))
+console.log((s / user.length).toFixed(2))
 
 // step 1
-let ss = 0
+let s = 0
 console.log(user[0])
 console.log(user[0].age)
-console.log(ss)
+console.log(s)
 console.log('----------')
-ss += user[0].age ?? 0
+s += user[0].age ?? 0
 
 // step 2
 console.log(user[1])
 console.log(user[1].age)
-console.log(ss)
+console.log(s)
 console.log('----------')
-ss += user[1].age ?? 0
+s += user[1].age ?? 0
 
 // ... 생략 ...
 

@@ -14,6 +14,28 @@
         // clear() – 모든 데이터 삭제
         // key(index) – 인덱스(index)에 해당하는 키 호출
         // length – 저장된 항목의 개수
+        const memo = [];
+        memo.push('메모1')
+        memo.push('메모2')
+
+        localStorage.setItem('메모', memo)
+        
+        // 저장하실 때에는 문자열로 변환해서 넣으셔야 합니다.
+        // const memo2 = {}
+        // memo2['one'] = '메모1'
+        // memo2['two'] = '메모2'
+        // localStorage.setItem('메모2', memo2)
+
+        // console.log(localStorage.getItem('메모'))
+        // console.log(localStorage.getItem('메모2'))
+
+        const memo2 = {}
+        memo2['one'] = '메모1'
+        memo2['two'] = '메모2'
+        localStorage.setItem('메모2', JSON.stringify(memo2))
+
+        console.log(localStorage.getItem('메모2'))
+        console.log(JSON.parse(localStorage.getItem('메모2')))
     </script>
 </body>
 </html>

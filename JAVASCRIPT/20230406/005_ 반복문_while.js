@@ -10,23 +10,23 @@ while (x < 10) {
 // why? 10까지 출력이 되는가?
 // 일반 JS에서는 출력되지 않습니다.
 // 콘솔에서만 출력됩니다.
-let x1 = 0
-while (x1 < 10) {
-    console.log(x1)
-    x1 += 1
+let x = 0
+while (x < 10) {
+    console.log(x)
+    x += 1
 }
 
-let x2 = 0
+let x = 0
 while (x < 10) {
-    console.log(x2)
-    x2 += 1
+    console.log(x)
+    x += 1
     console.log('')
 }
 
-let x3 = 1
-x3 += 1
-x3 += 1
-x3 += 1 // 여러번 해보세요. x값이 출력되는데 개발자 편의를 위해 제공하는 기능입니다. 
+let x = 1
+x += 1
+x += 1
+x += 1 // 여러번 해보세요. x값이 출력되는데 개발자 편의를 위해 제공하는 기능입니다. 
 /////
 
 let input;
@@ -39,11 +39,11 @@ console.log("입력한 숫자는 " + input + "입니다.");
 
 /////
 
-let input1;
+let input;
 
 do {
     input = confirm("다음에도 저희와 함께 하시겠습니까?")
-} while (!input1);
+} while (!input);
 
 console.log("감사합니다.");
 
@@ -56,14 +56,14 @@ for (let i = 2; i < 10; i++) {
     }
 }
 
-let i1 = 2;
-while (i1 < 10) {
+let i = 2;
+while (i < 10) {
     let j = 1;
     while (j < 10) {
-        console.log(`${i1} x ${j} = ${i1 * j}`);
+        console.log(`${i} x ${j} = ${i * j}`);
         j++;
     }
-    i1++;
+    i++;
 }
 
 // 오답
@@ -93,11 +93,11 @@ console.log(result)
 // s[2] + result => 'l' + 'eh' => 'leh'
 // ...
 
-let ss = 'hello world'
-let results = ''
+let s = 'hello world'
+let result = ''
 let count = 0
 while (count < s.length) {
-    results = ss[count] + results
+    result = s[count] + result
     count++;
 }
 
@@ -106,11 +106,11 @@ console.log(result)
 // 암기코드 3
 // 팩토리얼
 // 5! = 5 * 4 * 3 * 2 * 1
-let sss = 1;
+let s = 1;
 for (let i = 1; i < 6; i++) {
-    sss *= i
+    s *= i
 }
-console.log(sss)
+console.log(s)
 
 // s = s  *  i // 1 * 1
 // s = 1  *  2
@@ -118,11 +118,11 @@ console.log(sss)
 // s = 6  *  4
 // s = 24 *  5
 
-let s4 = 1;
+let s = 1;
 i = 1;
 while (i < 6) {
-    s4 *= i
+    s *= i
     i += 1
 }
 
-console.log(s4)
+console.log(s)
