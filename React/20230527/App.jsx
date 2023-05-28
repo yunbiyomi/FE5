@@ -23,8 +23,12 @@ function MyHeader({ pageName, a }) {
 const Memo = ({ title, idx }) => {
     return (
         <>
-        <div>{idx + 1}번 메모</div>
-        <article>{title}</article>
+        <div>
+            {idx + 1}번 메모
+        </div>
+        <article>
+            {title}
+        </article>
         </>
     );
 };
