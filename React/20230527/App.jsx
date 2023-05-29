@@ -25,6 +25,7 @@ const Memo = ({ title, idx }) => {
         <>
         <div>
             {idx + 1}번 메모
+            {idx + 1}번 메모
         </div>
         <article>
             {title}
